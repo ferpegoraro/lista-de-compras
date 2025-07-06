@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Voltar
+            </a>
+            <h1>Compras da semana</h1>
+        </header>
+
+        <form id="add-form" class="add-item-container">
+            <input type="text" id="new-item" placeholder="Adicione um novo item" class="add-item-input">
+            <button type="submit" id="add-btn" class="add-item-btn">Adicionar item</button>
+        </form>
+
+        <ul id="shopping-list" class="shopping-list">
+            <!-- Os itens serão adicionados dinamicamente via JavaScript -->
+        </ul>
+
+        <div id="notification" class="notification">
+            <i class="fas fa-exclamation-circle"></i>
+            <span>O item foi removido da lista</span>
+            <button class="close-notification">×</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

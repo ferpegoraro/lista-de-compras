@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5fa;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+header{
+    & h1{
+        margin-block: 50px;
+    }
+}
+
+.back-btn {
+    color: #e83e8c;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.add-item-container {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.add-item-input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.add-item-btn {
+    background-color: #e83e8c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0 20px;
+    font-size: 16px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.shopping-list {
+    list-style-type: none;
+}
+
+.shopping-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.item-checkbox {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.item-text {
+    flex: 1;
+    font-size: 16px;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.remove-btn:hover {
+    color: #e83e8c;
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: none;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.notification.show {
+    display: flex;
+}
+
+.notification i {
+    margin-right: 10px;
+}
+
+.close-notification {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* Estilo para quando o item estiver marcado como comprado */
+
